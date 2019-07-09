@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Лысков](https://up.htmlacademy.ru/adaptive/17/user/977739).
-* Наставник: Мурат Баркинхоев.
+* Наставник: [Мурат Баркинхоев] (https://up.htmlacademy.ru/adaptive/17/user/186857).
 
 ---
 
