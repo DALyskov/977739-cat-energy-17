@@ -5,8 +5,95 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
+    <header class="header">
+      <a class="header__logo-img">
+        <img class="header__logo-img" src="" width="33" height="38" alt="Логотип Cat energy">
+      </a>
+      <a class="header__logo-txt">
+        <img class="header__logo-txt" src="" width="101" height="18" alt="Cat energy">
+      </a>
+      <nav class="header__nav nav">
+        <!--Почему в Барбершоп не привязывали к блоку Header?-->
+        <button class="nav__toggle" type="button">Открыть меню</button>
+        <ul class="nav__list site-list">
+          <li class="site-list__item">
+            <a href="">Главная</a>
+          </li>
+          <li class="site-list__item">
+              <a href="">Подбор программы</a>
+            </li>
+            <li class="site-list__item">
+                <a href="">Каталог продукции</a>
+              </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="visually-hidden">Cat energy - Функциональное питание для котов</h1>
+      <div class="cover">
+        <b class="cover__slogan">Функциональное питание для котов</b>
+        <b class="cover__intro">Занялся собой? Займись котом!</b>
+        <img class="cover__banner" src="" width="280" height="270"
+          alt="Изображение продукции - питание для котов">
+        <a class="cover__transition button" href="form.html">Подобрать программу</a>
+      </div>
+      <section class="programs">
+        <h2 class="visually-hidden">Выбор программы</h2>
+        <ul class="programs__list">
+          <li class="programs__item programs__item--slim">
+            <h3 class="programs__title">Похудение</h3>
+            <p class="programs__description">Ваш кот весит больше собаки
+              и почти утратил способность лазить по деревьям? Пора на диету!
+              Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+            </p>
+            <a class="cover__transition button" href="">Каталог Slim</a>
+          </li>
+          <li class="programs__item programs__item--pro">
+              <h3 class="programs__title">Набор массы</h3>
+              <p class="programs__description">Заработать авторитет среди
+                дворовых котов и даже собак? Серия Cat Energy Pro
+                поможет вашему коту нарастить необходимые мышцы!
+              </p>
+              <a class="cover__transition button" href="">Каталог Pro</a>
+            </li>
+        </ul>
+      </section>
+      <section class="faq">
+        <h2 class="fac__title">Как это работает</h2>
+        <ul class="faq__list">
+          <li class="faq__item faq__item--ingredients">
+            <p class="faq__description">Функциональное питание
+              содержит только полезные питательные вещества.
+            </p>
+          </li>
+          <li class="faq__item faq__item--formula">
+            <p class="faq__description">Выпускается в виде порошка,
+              который нужно лишь залить кипятком и готово.
+            </p>
+          </li>
+          <li class="faq__item faq__item--precept">
+            <p class="faq__description">Замените один-два приема
+              обычной еды на наше функциональное питание.
+            </p>
+          </li>
+          <li class="faq__item faq__item--result">
+            <p class="faq__description">Уже через месяц
+              наслаждайтесь изменениями к лучшему вашего питомца!
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="example">
+        <div class="example__initial-data">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца,
+            просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок!
+            При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+        </div>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+      </section>
+    </main>
   </body>
 </html>
