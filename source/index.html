@@ -2,29 +2,32 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
-      <a class="header__logo-img logo-img">
-        <img class="logo-img__img" src="" width="33" height="38" alt="Логотип Cat energy">
-      </a>
-      <a class="header__logo-txt logo-txt">
-        <img class="logo-txt__txt" src="" width="101" height="18" alt="Cat energy">
-      </a>
+      <div class="header__logo-wrapper">
+        <a class="header__logo">
+          <img class="header__logo-img" src="img/logo-mobile.svg"  alt="Логотип Cat energy">
+        </a>
+        <button class="header__toggle" type="button">
+          Открыть меню
+          <!-- <span class="visually-hidden"></span> -->
+        </button>
+      </div>
       <nav class="nav">
-        <button class="nav__toggle" type="button">Открыть меню</button>
         <ul class="nav__list site-list">
           <li class="site-list__item">
-            <a>Главная</a>
+            <a class="site-lis__link site-lis__link--active">Главная</a>
           </li>
           <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
+              <a class="site-lis__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
-                <a href="catalog.html">Каталог продукции</a>
-              </li>
+          <li class="site-list__item">
+              <a class="site-lis__link" href="form.html">Подбор программы</a>
+            </li>
         </ul>
       </nav>
     </header>
@@ -33,23 +36,23 @@
       <div class="cover">
         <b class="cover__slogan">Функциональное питание для котов</b>
         <b class="cover__intro">Занялся собой? Займись котом!</b>
-        <img class="cover__banner" src="" width="280" height="270"
+        <img class="cover__banner" src="img/index-can-mobile@1x.png" width="280" height="271"
           alt="Изображение продукции - питание для котов">
         <a class="cover__transition button" href="form.html">Подобрать программу</a>
       </div>
       <section class="programs">
         <h2 class="visually-hidden">Выбор программы</h2>
         <ul class="programs__list">
-          <li class="programs__item programs__item--slim">
-            <h3 class="programs__title">Похудение</h3>
+          <li class="programs__item">
+            <h3 class="programs__title programs__title--slim">Похудение</h3>
             <p class="programs__description">Ваш кот весит больше собаки
               и почти утратил способность лазить по деревьям? Пора на диету!
               Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
             <a class="programs__transition" href="form.html">Каталог Slim</a>
           </li>
-          <li class="programs__item programs__item--pro">
-              <h3 class="programs__title">Набор массы</h3>
+          <li class="programs__item">
+              <h3 class="programs__title programs__title--pro">Набор массы</h3>
               <p class="programs__description">Заработать авторитет среди
                 дворовых котов и даже собак? Серия Cat Energy Pro
                 поможет вашему коту нарастить необходимые мышцы!
@@ -119,7 +122,7 @@
         <h2 class="address__title">приглашаем к сотрудничеству дилеров!</h2>
         <p class="address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         <div class="address__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1563183216079!5m2!1sru!2sru" width="600" height="450"  style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1563183216079!5m2!1sru!2sru" width="100%" height="100%"  style="border:0" allowfullscreen></iframe>
         </div>
       </section>
     </main>
@@ -138,14 +141,14 @@
           <a class="social__link social__link--fb" href="">Facebook</a>
         </li>
       </ul>
-      <p class="footer__copyright copyright">
+      <!-- <p class="footer__copyright copyright">
         <a class="copyright__txt" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="copyright__img" href="https://htmlacademy.ru/intensive/adaptive">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
             <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
           </svg>
         </a>
-      </p>
+      </p> -->
     </footer>
   </body>
 </html>

@@ -2,30 +2,34 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи. Каталог продукции</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
-      <a class="header__logo-img logo-img" href="index.html">
-        <img class="logo-img__img" src="" width="33" height="38" alt="Логотип Cat energy">
-      </a>
-      <a class="header__logo-txt logo-txt" href="index.html">
-        <img class="logo-txt__txt" src="" width="101" height="18" alt="Cat energy">
-      </a>
-      <nav class="nav">
-        <button class="nav__toggle" type="button">Открыть меню</button>
-        <ul class="nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
-          </li>
-          <li class="site-list__item">
-            <a>Каталог продукции</a>
-          </li>
-        </ul>
-      </nav>
+        <div class="header__logo-wrapper">
+          <a class="header__logo">
+            <img class="header__logo-img" src="img/logo-mobile.svg"  alt="Логотип Cat energy">
+          </a>
+          <button class="header__toggle" type="button">
+            Открыть меню
+            <!-- <span class="visually-hidden"></span> -->
+          </button>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-lis__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-lis__link site-lis__link--active">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-lis__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
     </header>
     <main class="main">
       <h1 class="title"> Каталог продукции</h1>

@@ -1,4 +1,47 @@
+@import "normalize.scss";
+@import "variables.scss";
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/main.scss";
+@import "blocks/cover.scss";
+@import "blocks/button.scss";
+@import "blocks/programs.scss";
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/ptsans_regular/oswaldregular.woff") format("woff"), url("../fonts/ptsans_regular/oswaldregular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/ptsans_bold/oswaldmedium.woff") format("woff"), url("../fonts/ptsans_bold/oswaldmedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
 body {
   font: 100% $font-stack;
   color: $primary-color;
+
+
+  // width: 100%;
+  min-width: 320px;
+  margin: 0;
 }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+

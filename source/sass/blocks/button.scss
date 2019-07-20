@@ -1,0 +1,24 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  min-height: 40px;
+  padding: 10px 0;
+
+  background-color: $button-color;
+
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $txt-color-alt;
+
+  &:hover {
+    background-color: $button-color-hover;
+  }
+
+  &:active {
+    background-color: $button-color-hover;
+    color: rgba($txt-color-alt, $opacity-txt-down)
+  }
+}
