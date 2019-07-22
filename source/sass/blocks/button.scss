@@ -6,9 +6,9 @@
 
   background-color: $button-color;
 
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: normal;
-  line-height: 18px;
   text-transform: uppercase;
   text-align: center;
   color: $txt-color-alt;
@@ -21,4 +21,24 @@
     background-color: $button-color-hover;
     color: rgba($txt-color-alt, $opacity-txt-down)
   }
+
+  &--small {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &--light {
+    background-color: $block-backgr-color;
+    color: $txt-color-arial;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+      color: rgba($txt-color-arial, $opacity-txt-down)
+    }
+  }
 }
+
