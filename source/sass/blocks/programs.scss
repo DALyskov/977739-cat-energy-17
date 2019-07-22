@@ -34,9 +34,9 @@
   text-transform: uppercase;
 
   --left: 2px;
-  --bottom:2px;
+  --bottom: 2px;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     display: inline-block;
@@ -56,10 +56,10 @@
     display: inline-block;
     width: 50px;
     height: 49px;
-    left: calc(var(--left) + 0px);
+    left: calc(var(--left));
     bottom: calc(var(--bottom) + 4px);
     vertical-align: middle;
-    background: url(../../img/icon-cat-slim.svg) no-repeat;
+    background: url("../img/icon-cat-slim.svg") no-repeat;
     background-size: 50px 49px;
   }
 
@@ -72,7 +72,7 @@
     left: calc(var(--left) - 9px);
     bottom: calc(var(--bottom) + 1px);
     vertical-align: middle;
-    background: url(../../img/icon-cat-pro.svg) no-repeat;
+    background: url("../img/icon-cat-pro.svg") no-repeat;
     background-size: 67px 50px;
   }
 }
@@ -112,4 +112,3 @@
     opacity: $opacity-txt-down;
   }
 }
-

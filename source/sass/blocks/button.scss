@@ -19,7 +19,7 @@
 
   &:active {
     background-color: $button-color-hover;
-    color: rgba($txt-color-alt, $opacity-txt-down)
+    color: rgba($txt-color-alt, $opacity-txt-down);
   }
 
   &--small {
@@ -37,8 +37,7 @@
 
     &:active {
       background-color: #ebebeb;
-      color: rgba($txt-color-arial, $opacity-txt-down)
+      color: rgba($txt-color-arial, $opacity-txt-down);
     }
   }
 }
-

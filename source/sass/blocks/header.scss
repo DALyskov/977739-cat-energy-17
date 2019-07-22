@@ -36,7 +36,6 @@
 
 .header__toggle {
   position: relative;
-  height: 100%;
 
   width: 24px;
   height: 20px;
@@ -54,7 +53,7 @@
     content: "";
     position: absolute;
     top: 10px;
-    left: 0px;
+    left: 0;
     width: 24px;
     height: 2px;
     background-color: #222222;
@@ -68,7 +67,3 @@
     transform: rotate(-45deg);
   }
 }
-
-
-
-
