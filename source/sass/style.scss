@@ -7,6 +7,12 @@
 @import "blocks/cover.scss";
 @import "blocks/button.scss";
 @import "blocks/programs.scss";
+@import "blocks/faq.scss";
+@import "blocks/example.scss";
+@import "blocks/address.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
 
 @font-face {
   font-family: "Oswald";
@@ -23,13 +29,11 @@
 }
 
 body {
-  font: 100% $font-stack;
-  color: $primary-color;
-
-
-  // width: 100%;
   min-width: 320px;
   margin: 0;
+
+  font: 100% $font-stack;
+  color: $primary-color;
 }
 
 .visually-hidden {

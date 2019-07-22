@@ -1,0 +1,46 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 78px;
+}
+
+.copyright__link-txt {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  color: $txt-color-arial;
+
+  cursor: pointer;
+
+  &:active {
+    opacity: $opacity-txt-down;
+  }
+}
+
+.copyright__link-img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+
+  font-size: 0;
+
+  fill: $icon-social-color;
+
+  &:hover {
+    fill: $button-color;
+  }
+
+  &:active {
+    fill: $button-color;
+    opacity: $opacity-txt-down;
+  }
+}
+
+.copyright__img {
+
+}

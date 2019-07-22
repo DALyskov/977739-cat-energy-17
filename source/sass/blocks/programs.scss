@@ -1,6 +1,7 @@
 .programs {
   width: 100%;
   margin: 0;
+  margin-top: 22px;
   padding: 0;
 }
 
@@ -12,7 +13,8 @@
 }
 
 .programs__item {
-  margin: 20px 0;
+  margin: 0;
+  margin-top: 20px;
   padding: 0 20px;
   padding-top: 30px;
 
@@ -32,6 +34,7 @@
   text-transform: uppercase;
 
   --left: 2px;
+  --bottom:2px;
 
   &:before {
     content: "";
@@ -41,7 +44,7 @@
     height: 50px;
     border-radius: 50%;
     left: var(--left);
-    bottom: 0px;
+    bottom: var(--bottom);
     vertical-align: middle;
     background: $button-color no-repeat;
     background-size: 50px auto;
@@ -52,39 +55,40 @@
     position: absolute;
     display: inline-block;
     width: 50px;
-    height: 50px;
-    left: calc(var(--left) + 1px);
-    bottom: 3px;
+    height: 49px;
+    left: calc(var(--left) + 0px);
+    bottom: calc(var(--bottom) + 4px);
     vertical-align: middle;
     background: url(../../img/icon-cat-slim.svg) no-repeat;
-    background-size: 50px 50px;
+    background-size: 50px 49px;
   }
 
   &--pro::after {
     content: "";
     position: absolute;
     display: inline-block;
-    width: 65px;
+    width: 67px;
     height: 50px;
-    left: calc(var(--left) - 8px);
-    bottom: 0px;
+    left: calc(var(--left) - 9px);
+    bottom: calc(var(--bottom) + 1px);
     vertical-align: middle;
     background: url(../../img/icon-cat-pro.svg) no-repeat;
-    background-size: 65px 50px;
+    background-size: 67px 50px;
   }
 }
 
 .programs__description {
   margin: 0;
   margin-top: 20px;
-  padding-bottom: 22px;
+  padding-bottom: 21px;
 
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
+  color: $txt-color-arial;
 
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $border;
 }
 
 .programs__transition {
