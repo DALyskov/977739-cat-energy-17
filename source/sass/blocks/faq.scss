@@ -1,0 +1,82 @@
+.faq {
+  margin-top: 17px;
+}
+
+.faq__title {
+  margin: 0 20px;
+  padding: 0;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  list-style: none;
+  margin: 0 20px;
+  padding: 0;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $txt-color-arial;
+}
+
+.faq__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-top: 27px;
+  padding: 0;
+
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  &--ingredients::before {
+    content: "";
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background: center $button-color url("../img/advantage-leaf@1x.png") no-repeat;
+  }
+
+  &--formula::before {
+    content: "";
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background: center $button-color url("../img/advantage-powder@1x.png") no-repeat;
+  }
+
+  &--precept::before {
+    content: "";
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background: center $button-color url("../img/advantage-dining@1x.png") no-repeat;
+  }
+
+  &--result::before {
+    content: "";
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background: center $button-color url("../img/advantage-clock@1x.png") no-repeat;
+  }
+}
+
+.faq__description {
+  margin: 0;
+  padding: 0;
+}

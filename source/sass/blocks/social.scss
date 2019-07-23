@@ -1,0 +1,42 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+
+  width: 100%;
+  padding: 22px 0;
+
+  font-size: 0;
+}
+
+.social__item {
+  margin: 0 17px;
+}
+
+.social__link {
+  display: block;
+  width: 25px;
+
+  cursor: pointer;
+
+  fill: $icon-social-color;
+
+  &:hover {
+    fill: $button-color;
+  }
+
+  &:active {
+    fill: $button-color;
+    opacity: $opacity-txt-down;
+  }
+}
+
+.social__vk,
+.social__insta,
+.social__fb {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

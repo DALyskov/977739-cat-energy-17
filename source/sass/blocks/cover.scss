@@ -1,0 +1,56 @@
+.cover {
+  display: block;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: $txt-color-alt;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 305px;
+    z-index: -10;
+
+    background: top rgba(99, 167, 58, 1) url("../img/index-background-mobile@1x.jpg") no-repeat;
+    background-size: 320px 305px;
+  }
+}
+
+.cover__slogan {
+  display: block;
+  margin: 0 20px;
+  padding-top: 27px;
+  padding-bottom: 25px;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.cover__intro {
+  display: block;
+  margin: 0 20px;
+
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cover__banner {
+  display: block;
+  width: 280px;
+  height: 271px;
+  margin-top: 26px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cover__transition {
+  margin: 0 20px;
+  margin-top: 5px;
+}

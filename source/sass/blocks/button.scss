@@ -1,0 +1,43 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  min-height: 40px;
+  padding: 10px 0;
+
+  background-color: $button-color;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: $txt-color-alt;
+
+  &:hover {
+    background-color: $button-color-hover;
+  }
+
+  &:active {
+    background-color: $button-color-hover;
+    color: rgba($txt-color-alt, $opacity-txt-down);
+  }
+
+  &--small {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &--light {
+    background-color: $block-backgr-color;
+    color: $txt-color-arial;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+      color: rgba($txt-color-arial, $opacity-txt-down);
+    }
+  }
+}
