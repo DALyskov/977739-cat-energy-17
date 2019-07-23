@@ -27,6 +27,10 @@
   max-width: 191px;
 
   cursor: pointer;
+
+  &--active {
+    cursor: auto;
+  }
 }
 
 .header__logo-img {

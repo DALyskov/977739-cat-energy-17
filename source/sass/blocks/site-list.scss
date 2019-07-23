@@ -24,11 +24,15 @@
   color: $primary-color;
   cursor: pointer;
 
-  &:hover {
+  &:hover:not(.site-lis__link--active) {
     opacity: $opacity-txt-hover;
   }
 
-  &:active {
+  &:active:not(.site-lis__link--active) {
     opacity: $opacity-txt-down;
+  }
+
+  &--active {
+    cursor: auto;
   }
 }
