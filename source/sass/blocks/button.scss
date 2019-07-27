@@ -1,7 +1,7 @@
 .button {
   display: block;
   box-sizing: border-box;
-  min-height: 40px;
+  min-height: 40px; /*!!! Проверить высоту для других разрешений - кнопка на главной 52px*/
   padding: 10px 0;
 
   background-color: $button-color;
@@ -39,5 +39,13 @@
       background-color: #ebebeb;
       color: rgba($txt-color-arial, $opacity-txt-down);
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button--small {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 17px 0;
   }
 }

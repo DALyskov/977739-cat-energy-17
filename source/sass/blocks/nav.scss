@@ -1,5 +1,24 @@
 .nav {
+  display: block;
+
   width: 100%;
   margin: 0;
   padding: 0;
+
+  &--nojs {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav--closed {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .nav {
+    width: auto;
+    // display: flex;
+  }
 }

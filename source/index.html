@@ -12,13 +12,13 @@
         <a class="header__logo header__logo--active">
           <img class="header__logo-img" src="img/logo-mobile.svg"  alt="Логотип Cat energy">
         </a>
-        <button class="header__toggle" type="button">
-          Открыть меню
+        <button class="header__toggle header__toggle--opened header__toggle--nojs" type="button">
+          <span class="visually-hidden">Открыть меню</span>
           <!-- <span class="visually-hidden"></span> -->
         </button>
       </div>
       <nav class="nav">
-        <ul class="nav__list site-list">
+        <ul class="nav__list site-list site-list--closed site-list--index">
           <li class="site-list__item">
             <a class="site-lis__link site-lis__link--active">Главная</a>
           </li>
@@ -34,12 +34,14 @@
     <main class="main">
       <h1 class="visually-hidden">Cat energy - Функциональное питание для котов</h1>
       <div class="cover">
-        <b class="cover__slogan">Функциональное<br>
-          питание для котов</b>
-        <b class="cover__intro">Занялся собой? Займись котом!</b>
-        <img class="cover__banner" src="img/index-can-mobile@1x.png" width="280" height="271"
-          alt="Изображение продукции - питание для котов">
-        <a class="cover__transition button button--small" href="form.html">Подобрать программу</a>
+        <div class="cover__container">
+          <b class="cover__slogan">Функциональное<br>
+            питание для котов</b>
+          <b class="cover__intro">Занялся собой? Займись котом!</b>
+            <img class="cover__banner" src="img/index-can-mobile@1x.png" width="280" height="271"
+            alt="Изображение продукции - питание для котов">
+          <a class="cover__transition button button--small" href="form.html">Подобрать программу</a>
+        </div>
       </div>
       <section class="programs">
         <h2 class="visually-hidden">Выбор программы</h2>
@@ -192,5 +194,6 @@
         </a>
       </p>
     </footer>
+    <script type="text/javascript" src="js/nav.js"></script>
   </body>
 </html>

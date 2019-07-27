@@ -21,10 +21,10 @@
 }
 
 .header__logo {
-  display: block;
+  // display: block;
 
-  width: 100%;
-  max-width: 191px;
+  // width: 100%;
+  width: 191px;
 
   cursor: pointer;
 
@@ -44,8 +44,7 @@
   width: 24px;
   height: 20px;
   margin-bottom: 5px;
-
-  font-size: 0;
+  padding: 0;
 
   background-color: white;
   border: 0;
@@ -56,18 +55,88 @@
   &::after {
     content: "";
     position: absolute;
-    top: 10px;
+    // top: 0; Почему полоса посередине?
     left: 0;
     width: 24px;
     height: 2px;
     background-color: #222222;
   }
 
-  &::before {
+  &--opened::before {
     transform: rotate(45deg);
   }
 
-  &::after {
+  &--opened::after {
     transform: rotate(-45deg);
   }
+
+  &--closed::before {
+    top: 0;
+
+    background-color: #222222;
+    box-shadow: 0 9px 0 0 #222222;
+  }
+  &--closed::after {
+    bottom: 0;
+  }
+
+  &--nojs {
+    display: none;
+  }
 }
+
+@media (min-width: $tablet-width) {
+  .header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 30px 30px;
+  }
+
+  .header__logo-wrapper {
+    padding: 0;
+    width: auto;
+    min-height: 65px;
+
+    border-bottom: 0;
+  }
+
+  .header__logo {
+    width: 173px;
+    height: 58px;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    box-sizing: border-box;
+    max-width: 1300px;
+    margin: 10px auto;
+    margin-top: 60px;
+    padding: 0 40px;
+  }
+
+  // .header__logo-wrapper {
+  //   padding: 0;
+  //   width: auto;
+  //   min-height: 65px;
+
+  //   border-bottom: 0;
+  // }
+
+  .header__logo {
+    width: 202px;
+    height: 59px;
+  }
+
+  // .header__toggle {
+  //   display: none;
+  // }
+}
+
