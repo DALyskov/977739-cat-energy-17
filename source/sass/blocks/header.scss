@@ -21,9 +21,6 @@
 }
 
 .header__logo {
-  // display: block;
-
-  // width: 100%;
   width: 191px;
 
   cursor: pointer;
@@ -76,6 +73,7 @@
     background-color: #222222;
     box-shadow: 0 9px 0 0 #222222;
   }
+
   &--closed::after {
     bottom: 0;
   }
@@ -122,21 +120,8 @@
     padding: 0 40px;
   }
 
-  // .header__logo-wrapper {
-  //   padding: 0;
-  //   width: auto;
-  //   min-height: 65px;
-
-  //   border-bottom: 0;
-  // }
-
   .header__logo {
     width: 202px;
     height: 59px;
   }
-
-  // .header__toggle {
-  //   display: none;
-  // }
 }
-

@@ -23,3 +23,15 @@
     line-height: 60px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .title {
+    box-sizing: border-box;
+    width: 1300px;
+    margin-top: 63px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 40px;
+    padding-bottom: 45px;
+  }
+}

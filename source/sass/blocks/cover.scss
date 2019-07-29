@@ -113,7 +113,8 @@
       display: block;
       content: "";
       position: absolute;
-      top: 0px;
+      // top: 0px;
+      top: 0;
       left: 50%;
       width: 50%;
       height: 696px;
@@ -125,13 +126,13 @@
   }
 
   .cover__slogan {
-  //   margin: 0 120px;
+    // margin: 0 120px;
     padding-top: 86px;
-  //   padding-bottom: 40px;
+    //   padding-bottom: 40px;
 
-  //   font-size: 60px;
-  //   line-height: 60px;
-  //   text-align: left;
+    //   font-size: 60px;
+    //   line-height: 60px;
+    //   text-align: left;
   }
 
   // .cover__intro {

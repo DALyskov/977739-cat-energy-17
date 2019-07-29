@@ -121,6 +121,7 @@
   .programs__item {
     padding: 0 53px;
     padding-top: 77px;
+
     &:last-child {
       margin-top: 30px;
     }
@@ -161,7 +162,8 @@
       height: 200px;
       left: auto;
       right: calc(var(--right) - 32px);
-      top: calc(var(--top) - 0px);
+      // top: calc(var(--top) - 0px);
+      top: calc(var(--top) - 0);
 
       background-size: 268px 200px;
     }
@@ -230,7 +232,8 @@
     line-height: 37px;
 
     --top: -29px;
-    --left: 0px;
+    // --left: 0px;
+    --left: 0;
 
     &::before {
       content: "";
@@ -266,12 +269,12 @@
     margin-top: 75px;
     margin-right: 0;
     margin-bottom: 13px;
-  //   padding-bottom: 0;
+    // padding-bottom: 0;
 
-  //   font-size: 16px;
-  //   line-height: 24px;
+    // font-size: 16px;
+    // line-height: 24px;
 
-  //   border-bottom: none;
+    // border-bottom: none;
   }
 
   .programs__title--pro + .programs__description {
