@@ -36,10 +36,6 @@
   margin-top: 20px;
   padding: 0;
 
-  // &:not(:first-child) {
-  //   margin-top: 20px;
-  // }
-
   &::before{
     content: "";
     flex-shrink: 0;
@@ -70,6 +66,12 @@
   padding: 0;
 }
 
+@media (max-width: 767px), (min-width: 1058px) and (max-width: $desktop-width) {
+  .faq__description br {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .faq {
     margin-top: 45px;
@@ -77,85 +79,106 @@
 
   .faq__title {
     margin: 0 30px;
-    // padding: 0;
 
     font-size: 60px;
-    // line-height: 60px;
-    // font-weight: normal;
   }
 
   .faq__list {
-    // display: flex;
     flex-direction: row;
-    // flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-    // list-style: none;
     margin: 0 30px;
-    // padding: 0;
 
-    // font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 24px;
-    // font-weight: normal;
-    // color: $txt-color-arial;
+    counter-reset: list 0;
   }
 
   .faq__item {
-    // position: relative;
-    // display: flex;
     flex-direction: column;
-    // justify-content: space-between;
     align-items: flex-start;
-    width: 35%;
-    // min-height: 184px;
-    // margin: 0;
-    margin-right: 11%;
-    margin-top: 70px;
-    // padding: 0;
 
-    // background: left
+    width: 35%;
+    margin-right: 10.5%;
+    margin-top: 70px;
+    margin-bottom: 30px;
 
     &::before{
       content: "";
-      // flex-shrink: 0;
       width: 80px;
       height: 80px;
-      // margin-right: 20px;
-    }
-
-    &--ingredients::before {
-      background: center $button-color url("../img/advantage-leaf@1x.png") no-repeat;
-    }
-
-    &--formula::before {
-      background: center $button-color url("../img/advantage-powder@1x.png") no-repeat;
-    }
-
-    &--precept::before {
-      background: center $button-color url("../img/advantage-dining@1x.png") no-repeat;
-    }
-
-    &--result::before {
-      background: center $button-color url("../img/advantage-clock@1x.png") no-repeat;
     }
 
     &::after {
-      content: "1";
-      flex-shrink: 0;
+      position: absolute;
 
-      // width: 80px;
+      width: 123px;
       height: 280px;
-      // margin-right: 20px;
+      top: 0;
+      right: 10px;
 
+      font-family: $font-stack;
       font-size: 280px;
-      line-height: 280px;
+      line-height: 202px;
+      text-align: center;
       color: $block-backgr-color;
+
+      z-index: -10;
+    }
+
+    &--ingredients::after {
+      counter-increment: list;
+      content: counter(list);
+    }
+
+    &--formula::after {
+      counter-increment: list;
+      content: counter(list);
+    }
+
+    &--precept::after {
+      counter-increment: list;
+      content: counter(list);
+    }
+
+    &--result::after {
+      counter-increment: list;
+      content: counter(list);
     }
   }
 
   .faq__description {
     margin-top: 33px;
     margin-bottom: 33px;
-    // padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .faq {
+    width: 1300px;
+    margin-top: 72px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .faq__title {
+    margin: 0 40px;
+  }
+
+  .faq__list {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    margin: 0 40px;
+  }
+  .faq__item {
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 245px;
+    margin-right: 0;
+    margin-top: 72px;
+    margin-bottom: 30px;
   }
 }
