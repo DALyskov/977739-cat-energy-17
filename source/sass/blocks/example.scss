@@ -95,3 +95,19 @@
 .example__visually {
   height: 365px;
 }
+
+@media (min-width: $tablet-width) {
+  .example {
+    min-height: 1078px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    min-height: 615px;
+  }
+
+  .example__visually {
+    height: 100px;
+  }
+}

@@ -6,6 +6,7 @@
   list-style: none;
 
   width: 100%;
+  // width: auto;
   padding: 22px 0;
 
   font-size: 0;
@@ -39,4 +40,34 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: auto; // Почему без этого свойства не сжимается?
+    padding: 0;
+  }
+
+  .social__item {
+    margin: 0 14px;
+  }
+
+  .social__link {
+    width: auto;
+  }
+
+  .social__vk {
+    width: 30px;
+    height: auto;
+  }
+
+  .social__insta {
+    width: 23px;
+    height: auto;
+  }
+
+  .social__fb {
+    width: 15px;
+    height: auto;
+  }
 }

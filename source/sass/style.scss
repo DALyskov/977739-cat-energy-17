@@ -23,13 +23,13 @@ body {
   color: $primary-color;
 }
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
+// .visually-hidden {
+//   position: absolute;
+//   clip: rect(0 0 0 0);
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+// }
 
 a {
   text-decoration: none;
@@ -50,3 +50,4 @@ a {
 @import "blocks/copyright.scss";
 @import "blocks/title.scss";
 @import "blocks/catalog.scss";
+@import "blocks/scaffolding.scss";

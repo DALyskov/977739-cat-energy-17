@@ -112,3 +112,172 @@
     opacity: $opacity-txt-down;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .programs__list {
+    padding: 0 30px;
+  }
+
+  .programs__item {
+    padding: 0 53px;
+    padding-top: 77px;
+
+    &:last-child {
+      margin-top: 30px;
+    }
+  }
+
+  .programs__title {
+    padding-left: 0;
+    padding-bottom: 0;
+
+    font-size: 36px;
+    line-height: 37px;
+
+    --right: 8px;
+    --top: 15px;
+
+    &::before {
+      content: "";
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      left: auto;
+      right: var(--right);
+      top: var(--top);
+    }
+
+    &--slim::after {
+      width: 200px;
+      height: 200px;
+      left: auto;
+      right: calc(var(--right));
+      top: calc(var(--top) - 10px);
+
+      background-size: 200px 193px;
+    }
+
+    &--pro::after {
+      width: 268px;
+      height: 200px;
+      left: auto;
+      right: calc(var(--right) - 32px);
+      // top: calc(var(--top) - 0px);
+      top: calc(var(--top) - 0);
+
+      background-size: 268px 200px;
+    }
+  }
+
+  .programs__description {
+    margin-top: 25px;
+    margin-right: 230px;
+    margin-bottom: 38px;
+    padding-bottom: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border-bottom: none;
+  }
+
+  .programs__title--pro + .programs__description {
+    margin-right: 260px;
+  }
+
+
+  .programs__transition {
+    margin-bottom: 39px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    width: 1300px;
+    // box-sizing: border-box;
+    // max-width: 1300;
+    margin: 0 auto;
+    margin-top: 80px;
+    // margin-top: 22px;
+    // padding: 0;
+  }
+
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 40px;
+  }
+
+  .programs__item {
+    box-sizing: border-box;
+    width: 570px;
+
+    margin: 0;
+    padding-top: 75px;
+
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+
+  .programs__title {
+    padding-left: 160px;
+    padding-bottom: 0;
+
+    font-size: 36px;
+    line-height: 37px;
+
+    --top: -29px;
+    // --left: 0px;
+    --left: 0;
+
+    &::before {
+      content: "";
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+
+      left: var(--left);
+      top: var(--top);
+    }
+
+    &--slim::after {
+      width: 100px;
+      height: 100px;
+
+      left: calc(var(--left) - 1px);
+      top: calc(var(--top) - 6px);
+
+      background-size: 100px 97px;
+    }
+
+    &--pro::after {
+      width: 134px;
+      height: 100px;
+      left: calc(var(--left) - 19px);
+      top: calc(var(--top) - 1px);
+
+      background-size: 134px 100px;
+    }
+  }
+
+  .programs__description {
+    margin-top: 75px;
+    margin-right: 0;
+    margin-bottom: 13px;
+    // padding-bottom: 0;
+
+    // font-size: 16px;
+    // line-height: 24px;
+
+    // border-bottom: none;
+  }
+
+  .programs__title--pro + .programs__description {
+    margin-right: 0;
+  }
+}
