@@ -92,6 +92,7 @@
 }
 
 .programs__transition {
+  position: relative;
   display: inline-block;
   padding-top: 19px;
   padding-bottom: 22px;
@@ -104,8 +105,20 @@
 
   cursor: pointer;
 
-  &:hover {
-    // opacity: $opacity-txt-hover;
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 33px;
+    height: 11px;
+    top: 23px;
+    left: 96px;
+
+    background: url("../img/icon-right-arrow-long.svg") no-repeat;
+  }
+
+  &:hover::after {
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
   }
 
   &:active {
@@ -163,7 +176,7 @@
       left: auto;
       right: calc(var(--right) - 32px);
       // top: calc(var(--top) - 0px);
-      top: calc(var(--top) - 0);
+      top: var(--top);
 
       background-size: 268px 200px;
     }
@@ -188,21 +201,23 @@
 
   .programs__transition {
     margin-bottom: 39px;
+    padding-top: 18px;
+    padding-bottom: 23px;
 
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      left: 128px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .programs {
     width: 1300px;
-    // box-sizing: border-box;
-    // max-width: 1300;
     margin: 0 auto;
     margin-top: 80px;
-    // margin-top: 22px;
-    // padding: 0;
   }
 
   .programs__list {
@@ -232,8 +247,9 @@
     line-height: 37px;
 
     --top: -29px;
-    // --left: 0px;
-    --left: 0;
+    /* stylelint-disable */
+    --left: 0px;
+    /* stylelint-enable */
 
     &::before {
       content: "";
@@ -269,12 +285,6 @@
     margin-top: 75px;
     margin-right: 0;
     margin-bottom: 13px;
-    // padding-bottom: 0;
-
-    // font-size: 16px;
-    // line-height: 24px;
-
-    // border-bottom: none;
   }
 
   .programs__title--pro + .programs__description {
