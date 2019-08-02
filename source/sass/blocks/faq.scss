@@ -46,19 +46,52 @@
 
   &--ingredients::before {
     background: center $button-color url("../img/advantage-leaf@1x.png") no-repeat;
+    background-size: 50px auto;
   }
 
   &--formula::before {
     background: center $button-color url("../img/advantage-powder@1x.png") no-repeat;
+    background-size: 50px auto;
   }
 
   &--precept::before {
     background: center $button-color url("../img/advantage-dining@1x.png") no-repeat;
+    background-size: 50px auto;
   }
 
   &--result::before {
     background: center $button-color url("../img/advantage-clock@1x.png") no-repeat;
+    background-size: 50px auto;
   }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .faq__item {
+    &--ingredients::before {
+      background: center $button-color url("../img/advantage-leaf@2x.png") no-repeat;
+      background-size: 50px auto;
+    }
+
+    &--formula::before {
+      background: center $button-color url("../img/advantage-powder@2x.png") no-repeat;
+      background-size: 50px auto;
+    }
+
+    &--precept::before {
+      background: center $button-color url("../img/advantage-dining@2x.png") no-repeat;
+      background-size: 50px auto;
+    }
+
+    &--result::before {
+      background: center $button-color url("../img/advantage-clock@2x.png") no-repeat;
+      background-size: 50px auto;
+    }
+  }
+
+  // .cover::before {
+  //   background: top rgba(99, 167, 58, 1) url("../img/index-background-desktop@2x.jpg") no-repeat;
+  //   background-size: 100% auto;
+  // }
 }
 
 .faq__description {

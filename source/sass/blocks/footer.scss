@@ -24,7 +24,7 @@
 }
 
 .footer__social {
-  margin-top: 30px;
+  margin-top: 32px;
 
   border-top: 1px solid $border;
   border-bottom: 1px solid $border;
@@ -49,6 +49,18 @@
 
   .footer__logo {
     margin-top: 0;
+
+    &:hover:not(.footer__logo--active) {
+      opacity: $opacity-txt-hover;
+    }
+
+    &:active:not(.footer__logo--active) {
+      opacity: $opacity-txt-down;
+    }
+
+    &--active {
+      cursor: auto;
+    }
   }
 
   .footer__social {
