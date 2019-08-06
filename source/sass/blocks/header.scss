@@ -66,22 +66,22 @@
     background-color: #222222;
   }
 
-  &--opened::before {
+  &--opened::before { /*closed*/
     transform: rotate(45deg);
   }
 
-  &--opened::after {
+  &--opened::after { /*closed*/
     transform: rotate(-45deg);
   }
 
-  &--closed::before {
+  &--closed::before { /*opened*/
     top: 0;
 
     background-color: #222222;
     box-shadow: 0 9px 0 0 #222222;
   }
 
-  &--closed::after {
+  &--closed::after { /*opened*/
     bottom: 0;
   }
 

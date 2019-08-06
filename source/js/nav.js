@@ -18,7 +18,7 @@ header_toggle.classList.remove("header__toggle--nojs");
 nav.classList.add("nav--closed");
 // nav.classList.toggle("nav--nojs");
 
-header_toggle_opened.addEventListener("click", function(event_header_toggle_opened) {
+header_toggle_closed.addEventListener("click", function(event_header_toggle_closed) {
   // event_header_toggle_closed.preventDefault();
   // hotel_search_form.classList.toggle("hotel-search-form-open");
   nav.classList.remove("nav--nojs");
