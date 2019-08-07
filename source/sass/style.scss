@@ -1,40 +1,7 @@
 @import "normalize.scss";
 @import "variables.scss";
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-body {
-  min-width: 320px;
-  margin: 0;
-
-  font: 100% $font-stack;
-  color: $primary-color;
-}
-
-// .visually-hidden {
-//   position: absolute;
-//   clip: rect(0 0 0 0);
-//   width: 1px;
-//   height: 1px;
-//   margin: -1px;
-// }
-
-a {
-  text-decoration: none;
-}
-
+@import "scaffolding.scss";
+@import "fonts.scss";
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
 @import "blocks/site-list.scss";
@@ -50,4 +17,3 @@ a {
 @import "blocks/copyright.scss";
 @import "blocks/title.scss";
 @import "blocks/catalog.scss";
-@import "blocks/scaffolding.scss";
