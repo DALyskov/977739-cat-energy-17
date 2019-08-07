@@ -169,19 +169,23 @@
   }
 
   .catalog__link-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: auto;
-    margin: -120px -50px 0;
+    height: 208px;
+    margin: -82px -50px 0;
   }
 
   .catalog__img {
     width: 324px;
-    height: 208px; /*174 for small*/
+    height: auto;
   }
 
   .catalog__table {
     width: 100%;
-    margin-top: 75px;
-    margin-bottom: 35px;
+    margin-top: 38px;
+    margin-bottom: 34px;
 
     font-size: 16px;
   }
@@ -253,7 +257,6 @@
 
   .catalog__img {
     width: 245px;
-    // height: 208px; /*174 for small*/
   }
 
   .catalog__par {

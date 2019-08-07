@@ -25,6 +25,14 @@
 
   cursor: pointer;
 
+  &:hover:not(.header__logo--active) {
+    opacity: $opacity-txt-hover;
+  }
+
+  &:active:not(.header__logo--active) {
+    opacity: $opacity-txt-down;
+  }
+
   &--active {
     cursor: auto;
   }
@@ -52,29 +60,28 @@
   &::after {
     content: "";
     position: absolute;
-    // top: 0; Почему полоса посередине?
     left: 0;
     width: 24px;
     height: 2px;
     background-color: #222222;
   }
 
-  &--opened::before {
+  &--opened::before { /*closed*/
     transform: rotate(45deg);
   }
 
-  &--opened::after {
+  &--opened::after { /*closed*/
     transform: rotate(-45deg);
   }
 
-  &--closed::before {
+  &--closed::before { /*opened*/
     top: 0;
 
     background-color: #222222;
     box-shadow: 0 9px 0 0 #222222;
   }
 
-  &--closed::after {
+  &--closed::after { /*opened*/
     bottom: 0;
   }
 
@@ -96,7 +103,6 @@
   .header__logo-wrapper {
     padding: 0;
     width: auto;
-    min-height: 65px;
 
     border-bottom: 0;
   }
@@ -104,6 +110,7 @@
   .header__logo {
     width: 173px;
     height: 58px;
+    margin-top: -17px;
   }
 
   .header__toggle {
