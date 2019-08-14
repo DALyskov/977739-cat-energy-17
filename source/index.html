@@ -127,13 +127,16 @@
           <p class="example__cost">Затраты на питание: 15 000 руб.</p>
         </div>
         <div class="example__visually">
-          <img class="example__img example__img--before" src="#" width="300" height="230" alt="Кот в начале диеты">
-          <img class="example__img example__img--after" src="#" width="300" height="230" alt="Кот в конце диеты">
+          <img class="example__img example__img--before" src="img/before-mobile@1x.png" width="300" height="230" alt="Кот в начале диеты">
+          <img class="example__img example__img--after" src="img/after-mobile@1x.png" style="width: 50%" height="230" alt="Кот в конце диеты">
+          <!-- width="300" -->
+          <!-- style="width: 50%" -->
           <div class="example__range">
             <button class="example__btn">Было</button>
-            <div class="example__progress">
+            <input class="example__progress" type="range" min="1" max="100" value="50">
+            <!-- <div class="example__progress">
               <div class="example__togggle"></div>
-            </div>
+            </div> -->
             <button class="example__btn">Стало</button>
           </div>
         </div>
@@ -187,6 +190,6 @@
       </div>
     </footer>
     <script src="js/nav.js"></script>
-    <!-- type="text/javascript" -->
+    <script src="js/range.js"></script>
   </body>
 </html>
