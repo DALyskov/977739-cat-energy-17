@@ -1,0 +1,12 @@
+.bonus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 39px 20px;
+
+  background: $button-color url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-color: $button-color;
+}
+
+

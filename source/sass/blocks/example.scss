@@ -23,6 +23,7 @@
   margin: 0 20px;
   margin-top: 24px;
   padding: 0;
+  padding-right: 10px;
 
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -109,19 +110,24 @@
 .example__img {
   position: absolute;
   display: block;
+  // display: inline-block;
   margin: 0 auto;
   top: -250px;
 
   &--before {
-    z-index: 20;
     // clip-path: inset(0 50% 0 0);
     clip: rect(auto, 150px, auto, auto);
-    background: white;
+    background-color: $block-backgr-color;
+    z-index: 20;
   }
 
   &--after {
     // direction: rtl;
+    // text-align: left;
+    clip: rect(auto, auto, auto, 150px);
+    background-color: $block-backgr-color;
     z-index: 10;
+
   }
 }
 

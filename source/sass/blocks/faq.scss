@@ -201,7 +201,7 @@
   }
 
   .faq__list {
-    flex-wrap: nowrap;
+    // flex-wrap: nowrap; /*Возможно стоит решить через ширину дочерних эл.*/
     justify-content: space-between;
 
     margin: 0 40px;

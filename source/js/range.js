@@ -5,8 +5,10 @@ var img_after = document.querySelector(".example__img--after");
 
 progress.addEventListener("input", function () {
   img_before.style.clip = "rect(auto, " + ((100 - progress.value) * 3) + "px , auto, auto)";
-  img_after.style.width = progress.value + "%";
+  img_after.style.clip = "rect(auto, auto, auto, " + ((100 - progress.value) * 3) + "px)";
   console.log(progress.value);
+  console.log(img_before.style.clip);
+  console.log(img_after.style.clip);
 });
 
 // progress.addEventListener("input", function () {

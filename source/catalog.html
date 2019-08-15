@@ -28,13 +28,13 @@
       <nav class="nav">
         <ul class="nav__list site-list site-list--closed">
           <li class="site-list__item">
-            <a class="site-lis__link" href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-              <a class="site-lis__link site-lis__link--active">Каталог продукции</a>
+              <a class="site-list__link site-list__link--active">Каталог продукции</a>
             </li>
           <li class="site-list__item">
-              <a class="site-lis__link" href="form.html">Подбор программы</a>
+              <a class="site-list__link" href="form.html">Подбор программы</a>
             </li>
         </ul>
       </nav>
@@ -269,11 +269,11 @@
         </ul>
       </section>
       <section class="products">
-        <h2 class="products__title">Список продукции</h2>
+        <h2 class="products__title">Дополнительные товары</h2>
         <ul class="products__list">
           <li class="products__item">
+            <h3 class="products__caption">Сахарозаменитель</h3>
             <table class="products__table">
-              <caption class="products__caption">Сахарозаменитель</caption>
               <tr>
                 <td class="products__data">1 упаковка (100 г)</td>
                 <td class="products__value">200 Р.</td>
@@ -282,8 +282,8 @@
             <a class="products__btn button" href="#">Заказать</a>
           </li>
           <li class="products__item">
+            <h3 class="products__caption">Питьевая вода</h3>
             <table class="products__table">
-              <caption class="products__caption">Питьевая вода</caption>
               <tr>
                 <td class="products__data">5 литров</td>
                 <td class="products__value">50Р.</td>
@@ -292,8 +292,8 @@
             <a class="products__btn button" href="#">Заказать</a>
           </li>
           <li class="products__item">
+            <h3 class="products__caption">Молоко</h3>
             <table class="products__table">
-              <caption class="products__caption">Молоко</caption>
               <tr>
                 <td class="products__data">1 литр</td>
                 <td class="products__value">100Р.</td>
@@ -302,8 +302,8 @@
             <a class="products__btn button" href="#">Заказать</a>
           </li>
             <li class="products__item">
+              <h3 class="products__caption">Витамины</h3>
               <table class="products__table">
-                <caption class="products__caption">Витамины</caption>
                 <tr>
                   <td class="products__data">1 упаковка (30 г)</td>
                   <td class="products__value">300Р.</td>
@@ -313,13 +313,13 @@
             </li>
         </ul>
         <div class="bonus">
-          <!-- <svg class="bonus__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="60" viewBox="0 0 55 60">
-            <image id="gift.svg" width="55" height="60" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA8CAYAAADCHCKFAAAD5klEQVRoge2bTWgdVRiGn9S2UpOiJlQqtTZSClEqKHTRoBRJQKu2MW03LktFu+kmmtptt5LUjVnownRV6EKIGxEVIVCEuhERaemi1IYG0iQVW2p/bNJXjn43ns45M3duzOKey7zwced8f3PeOfNzvplzkdSodEr6UNJZSbf1L2YkfSlpQFLbMnJicQOWZ9byuvw/SjomqSsSUyiFxojskzSnYpyRtC0SWyTbLK4Ibr/7C3IE8s9RLolDwOee60/Ad8Ac8CwwCHSZ7Q9gHzBZIvUrwATwmLWvWfs88ATQD+zw/N8BxoMsMcQYR2S7pLt2VK9L2hvxWSdpRNKi+d2S1Bfx86XP/GRxI5Yn67fH9utwR1JPxCeQQJEjE5b4nqTeHJ+aHPCuxRuSnov4YPobXocPRHx86bX9O3wRsQcSKCLS5Y3GJxF7TAa9mAuS2jM+7aavjdhgJEdMxixmocwNJlBE5A3vIq83ar4Me3FjGduYZxuOxOZJrxe3O8enIXIHvYSPR+x54m5W31jcfUk7zW+ntR2+bfDR0en15WDE/oCsitxjsrjrtR8NrPlwt+H3gFtAGzBiniPWdvp3za8s1nt+f9WLKUPunLfdF1iLcRn4yDxeBj61X0x/uTA6xC5P82tgzSI2nBlZJWnKToXzktZGfIqkQ9J85uE8b/qiuKyslvSLxU9Zv2J+S1Jm5O4DJ2y7BzgJrA288nETGM1YR01fFmvswf28+X9s/SpEbYZyyJ78m3KcHwKe8tqzwO3AKx/uYDzpWWcy13I9rLPZSg3TwEJOzLTNpMYdufe9kWklfODIXbWjcgX4vgXI9dtZNot3kQ/FLsoEZahGyL+hNPK8aWYs8Shzt0wWFblUUZFLFRW5VOGTa2sRTks83PTLTYI3WG1V5lVcs8O9KtziXjk6csNeldxKOForeQ5b2bPJK3vm7FXASmEj8LCVOjMrmPcRO/Owcmfaar/PshPjbm8iXfZ1W1mZtLyTK5x30Otzd6OVeLKoyKWKilyqqMiliopcqqjIpYqWJrc60PyHt4EXAu3y0W2R7vf4CubtCTSG7DoUt+NLgVc6eAb4rdbbopFztdy9QLt8dNinsMUGv83Vwxqr6UJU9VyiqMiliopcqqjIpYqKXJMj9wNOlty8t70x8G5O+CuT/P4H5G7aYhtsQXYKeMv6eCU7Z42dlqfs9zVgKLA2F1z/Xs30ewmxpfedwM/AZmv/AHwN/Pk/aR0BtgIXgbHA2hjagdeBlyxqCngR+L0eOYftwFfA04Gl+eCIvRlbXFr0pwm35Net6HMVuTvirhZrFria0J0Bp23t5fWgY8DfNakHUdAwYusAAAAASUVORK5CYII="/>
-          </svg> -->
+          <svg class="bonus__svg" width="55" height="60" role="img">
+            <use xlink:href="#icon-gift"></use>
+          </svg>
           <p class="bonus__txt">Закажите все и получите чехол для кота в подарок!</p>
         </div>
       </section>
-      <section class="address">
+      <section class="address address--notindex">
           <div class="address__container">
             <h2 class="address__title">приглашаем<br>к сотрудничеству дилеров!</h2>
             <p class="address__description">ул. Большая Конюшенная, д. 19/8<br> <br> Санкт-Петербург</p>
@@ -337,6 +337,7 @@
         <ul class="footer__social social">
           <li class="social__item">
             <a class="social__link social__link--vk" href="">
+              <span class="visually-hidden">Ссылка на Cat Energy в Vkontakte</span>
               <svg class="social__vk" width="22" height="12" role="img">
                 <use xlink:href="#icon-vk"></use>
               </svg>
@@ -344,6 +345,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--insta" href="">
+              <span class="visually-hidden">Ссылка на Cat Energy в Instagram</span>
               <svg class="social__insta" width="16" height="16" role="img">
                 <use xlink:href="#icon-insta"></use>
               </svg>
@@ -351,6 +353,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--fb" href="">
+              <span class="visually-hidden">Ссылка на Cat Energy в Facebook</span>
               <svg class="social__fb" width="10" height="19" role="img">
                 <use xlink:href="#icon-fb"></use>
               </svg>

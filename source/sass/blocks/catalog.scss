@@ -61,6 +61,8 @@
   font-weight: normal;
   text-transform: uppercase;
   text-align: left;
+
+  caption-side: inline-left;
 }
 
 .catalog__link-txt {
@@ -201,12 +203,12 @@
 
   .catalog__data {
     padding: 7px 0;
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $border-color;
   }
 
   .catalog__value {
     padding: 7px 0;
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $border-color;
   }
 
   .catalog__par {

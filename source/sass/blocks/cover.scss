@@ -27,8 +27,9 @@
 
 .cover__slogan {
   display: block;
-  margin: 0 20px;
-  padding-top: 27px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 27px 20px;
   padding-bottom: 25px;
 
   font-size: 36px;
@@ -75,8 +76,9 @@
   }
 
   .cover__slogan {
+    width: 450px;
     margin: 0 120px;
-    padding-top: 15px;
+    padding: 15px 0;
     padding-bottom: 40px;
 
     font-size: 60px;
