@@ -40,15 +40,71 @@
       </nav>
     </header>
     <main class="main">
-        <section class="address">
-            <div class="address__container">
-              <h2 class="address__title">приглашаем<br>к сотрудничеству дилеров!</h2>
-              <p class="address__description">ул. Большая Конюшенная, д. 19/8<br> <br> Санкт-Петербург</p>
-            </div>
-            <div class="address__map"> <!--Этот блок вроде не нужен -->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1563183216079!5m2!1sru!2sru" style="width: 100%; height: 100%; border:0;" allowfullscreen title="Местоположение на карте"></iframe>
-            </div>
-        </section>
+      <h1 class="title title--form">Подбор программы</h1>
+      <section class="profile">
+        <p class="profile__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form class="profile__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="profile__set profile__set--pet">
+            <label class="profile__field">
+              <span class="profile__name">Имя:*</span>
+              <input class="profile__data" type="text" placeholder="Барсик" name="cat's name" required>
+            </label>
+            <label class="profile__field">
+              <span class="profile__name">Вес (кг):*</span>
+              <input class="profile__data" type="text" placeholder="7" name="weight" required>
+            </label>
+            <label class="profile__field">
+              <span class="profile__name">Возраст (лет):</span>
+              <input class="profile__data" type="text" placeholder="7" name="age">
+            </label>
+          </fieldset>
+          <fieldset class="profile__set profile__set--program">
+            <input class="profile__radio" type="radio" name="program" value="slim" id="slim">
+            <label class="profile__type profile__type--radio" for="slim" tabindex="0">Похудение</label>
+            <input class="profile__radio" type="radio" name="program" value="mass" id="mass">
+            <label class="profile__type profile__type--radio" for="mass" tabindex="0">Набор массы</label>
+            <input class="profile__radio" type="radio" name="program" value="advice" id="advice">
+            <label class="profile__type profile__type--radio" for="advice" tabindex="0">Не знаю (Нужен ваш совет)</label>
+          </fieldset>
+          <fieldset class="profile__set profile__set--contacts">
+            <legend class="profile__subtitle">Контактные данные (владельца кота)</legend>
+              <label class="profile__field">
+                <span class="profile__name">E-mail:*</span>
+                <input class="profile__data" type="email" placeholder="kuklachev@gmail.com" name="E-mail" required>
+              </label>
+              <label class="profile__field">
+                <span class="profile__name">Телефон:*</span>
+                <input class="profile__data" type="tel" placeholder="8 (960) 900-60-90" name="phone" required>
+              </label>
+          </fieldset>
+          <fieldset class="profile__set profile__set--comment">
+            <label class="profile__subtitle" for="comment">Комментарий</label>
+            <textarea class="profile__comment" name="comment" id="comment" cols="30" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="profile__set profile__set--other">
+            <legend class="profile__subtitle">Дополнительно</legend>
+            <input class="profile__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+            <label class="profile__type profile__type--checkbox" for="sweetener" tabindex="0">Сахарозаменитель</label>
+            <input class="profile__checkbox" type="checkbox" name="water" id="water">
+            <label class="profile__type profile__type--checkbox" for="water" tabindex="0">Питьевая вода</label>
+            <input class="profile__checkbox" type="checkbox" name="milk" id="milk">
+            <label class="profile__type profile__type--checkbox" for="milk" tabindex="0">Молоко</label>
+            <input class="profile__checkbox" type="checkbox" name="vitamins" id="vitamins">
+            <label class="profile__type profile__type--checkbox" for="vitamins" tabindex="0">Витамины</label>
+          </fieldset>
+          <button class="profile__btn button" type="submit">Отправить заявку</button>
+          <span class="profile__note">* — Обязательные поля</span>
+        </form>
+      </section>
+      <section class="address">
+        <div class="address__container">
+          <h2 class="address__title">приглашаем<br>к сотрудничеству дилеров!</h2>
+          <p class="address__description">ул. Большая Конюшенная, д. 19/8<br> <br> Санкт-Петербург</p>
+        </div>
+        <div class="address__map"> <!--Этот блок вроде не нужен -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1563183216079!5m2!1sru!2sru" style="width: 100%; height: 100%; border:0;" allowfullscreen title="Местоположение на карте"></iframe>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__container">

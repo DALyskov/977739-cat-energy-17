@@ -11,6 +11,12 @@
   font-weight: normal;
 }
 
+.title--form {
+  padding-bottom: 25px;
+
+  border-bottom: none;
+}
+
 @media (min-width: $tablet-width) {
   .title {
     margin-top: 45px;
