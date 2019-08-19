@@ -67,7 +67,7 @@
             <label class="profile__type profile__type--radio" for="advice" tabindex="0">Не знаю (Нужен ваш совет)</label>
           </fieldset>
           <fieldset class="profile__set profile__set--contacts">
-            <legend class="profile__subtitle">Контактные данные (владельца кота)</legend>
+            <legend class="profile__subtitle">Контактные данные<br> (владельца кота)</legend>
               <label class="profile__field">
                 <span class="profile__name">E-mail:*</span>
                 <input class="profile__data" type="email" placeholder="kuklachev@gmail.com" name="E-mail" required>
@@ -79,7 +79,7 @@
           </fieldset>
           <fieldset class="profile__set profile__set--comment">
             <label class="profile__subtitle" for="comment">Комментарий</label>
-            <textarea class="profile__comment" name="comment" id="comment" cols="30" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="profile__comment" name="comment" id="comment" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="profile__set profile__set--other">
             <legend class="profile__subtitle">Дополнительно</legend>
@@ -93,10 +93,10 @@
             <label class="profile__type profile__type--checkbox" for="vitamins" tabindex="0">Витамины</label>
           </fieldset>
           <button class="profile__btn button" type="submit">Отправить заявку</button>
-          <span class="profile__note">* — Обязательные поля</span>
+          <p class="profile__note">* — Обязательные поля</p>
         </form>
       </section>
-      <section class="address">
+      <section class="address address--notindex">
         <div class="address__container">
           <h2 class="address__title">приглашаем<br>к сотрудничеству дилеров!</h2>
           <p class="address__description">ул. Большая Конюшенная, д. 19/8<br> <br> Санкт-Петербург</p>

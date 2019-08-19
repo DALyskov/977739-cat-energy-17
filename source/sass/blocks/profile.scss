@@ -1,10 +1,13 @@
 .profile {
+  display: flex;
+  flex-direction: column;
 //  background-color: red;
 
   // font-size: 16px;
   // line-height: 18px;
   // font-weight: normal;
   // text-transform: uppercase;
+  overflow-x: hidden;
 }
 
 .profile__text {
@@ -33,9 +36,15 @@
   }
 
   &--program {
+    margin-bottom: 28px;
     padding: 13px 20px;
+
     border-top: 1px solid #ededed;
     border-bottom: 1px solid #ededed;
+  }
+
+  &--contacts {
+    margin-bottom: 28px;
   }
 }
 
@@ -75,7 +84,7 @@
   border: 1px solid #e6e6e6;
 }
 
-.profile__radio {
+.profile__radio, .profile__checkbox {
   display: none;
 }
 
@@ -121,13 +130,111 @@
     margin-left: 9px;
 
     background-color: $button-color;
-
   }
 
   &--radio::after {
     border: none;
     border-radius: 50%;
   }
+
+  &--checkbox {
+    padding-top: 4px;
+    padding-bottom: 20px;
+    // padding: 10px 0 15px;
+  }
+
+  &--checkbox::before {
+    margin-top: -22px;
+  }
+
+  &--checkbox::after {
+    width: 20px;
+    height: 10px;
+    left: -4px;
+    margin-top: -17px;
+
+    transform: rotate(-45deg);
+
+    background: none;
+
+    border-left: 2px solid $button-color;
+    border-bottom: 2px solid $button-color;
+  }
+
 }
 
+.profile__subtitle {
+  position: relative;
+  display: inline-block;
+  // width: auto;
+  // margin: 29px 0;
+  margin-bottom: 35px;
+  // padding: 0 20px;
+  padding-right: 20px;
 
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+
+  background: white;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    display: block;
+    top: 14px;
+    width: 100vw;
+    // left: -20px;
+    height: 3px;
+
+    background: $button-color;
+
+    z-index: -10;
+  }
+}
+
+@media (min-width: 351px) {
+  .profile__subtitle br {
+    display: none;
+  }
+}
+
+.profile__comment {
+  box-sizing: border-box;
+  resize: none;
+  width: 100%;
+  height: 150px;
+  padding: 11px 13px;
+
+  overflow: auto;
+
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $txt-color-arial;
+
+  border: 1px solid $border-color;
+}
+
+.profile__btn {
+  // display: inline-block;
+  width: calc(100% - 40px);
+  margin: -2px 20px 21px;
+}
+
+.profile__note {
+  align-self: center;
+  margin: 0 20px;
+  margin-bottom: 32px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  // text-transform: none;
+  text-align: center;
+  color: $txt-color-arial;
+}
