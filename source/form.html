@@ -63,34 +63,44 @@
             <label class="profile__type profile__type--radio" for="slim" tabindex="0">Похудение</label>
             <input class="profile__radio" type="radio" name="program" value="mass" id="mass">
             <label class="profile__type profile__type--radio" for="mass" tabindex="0">Набор массы</label>
-            <input class="profile__radio" type="radio" name="program" value="advice" id="advice">
+            <input class="profile__radio" type="radio" name="program" value="advice" id="advice" checked>
             <label class="profile__type profile__type--radio" for="advice" tabindex="0">Не знаю (Нужен ваш совет)</label>
           </fieldset>
           <fieldset class="profile__set profile__set--contacts">
             <legend class="profile__subtitle">Контактные данные<br> (владельца кота)</legend>
+            <div class="profile__set-wrapper">
               <label class="profile__field">
                 <span class="profile__name">E-mail:*</span>
                 <input class="profile__data" type="email" placeholder="kuklachev@gmail.com" name="E-mail" required>
+                <svg class="profile__svg" width="20px" height="20px" role="img">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
               </label>
               <label class="profile__field">
                 <span class="profile__name">Телефон:*</span>
                 <input class="profile__data" type="tel" placeholder="8 (960) 900-60-90" name="phone" required>
+                <svg class="profile__svg" width="20px" height="20px" role="img">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
               </label>
+            </div>
           </fieldset>
           <fieldset class="profile__set profile__set--comment">
             <label class="profile__subtitle" for="comment">Комментарий</label>
             <textarea class="profile__comment" name="comment" id="comment" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="profile__set profile__set--other">
-            <legend class="profile__subtitle">Дополнительно</legend>
-            <input class="profile__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
-            <label class="profile__type profile__type--checkbox" for="sweetener" tabindex="0">Сахарозаменитель</label>
-            <input class="profile__checkbox" type="checkbox" name="water" id="water">
-            <label class="profile__type profile__type--checkbox" for="water" tabindex="0">Питьевая вода</label>
-            <input class="profile__checkbox" type="checkbox" name="milk" id="milk">
-            <label class="profile__type profile__type--checkbox" for="milk" tabindex="0">Молоко</label>
-            <input class="profile__checkbox" type="checkbox" name="vitamins" id="vitamins">
-            <label class="profile__type profile__type--checkbox" for="vitamins" tabindex="0">Витамины</label>
+            <legend class="profile__subtitle profile__subtitle--other">Дополнительно</legend>
+            <div class="profile__set-wrapper">
+              <input class="profile__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+              <label class="profile__type profile__type--checkbox" for="sweetener" tabindex="0">Сахарозаменитель</label>
+              <input class="profile__checkbox" type="checkbox" name="water" id="water">
+              <label class="profile__type profile__type--checkbox" for="water" tabindex="0">Питьевая вода</label>
+              <input class="profile__checkbox" type="checkbox" name="milk" id="milk">
+              <label class="profile__type profile__type--checkbox" for="milk" tabindex="0">Молоко</label>
+              <input class="profile__checkbox" type="checkbox" name="vitamins" id="vitamins">
+              <label class="profile__type profile__type--checkbox" for="vitamins" tabindex="0">Витамины</label>
+            </div>
           </fieldset>
           <button class="profile__btn button" type="submit">Отправить заявку</button>
           <p class="profile__note">* — Обязательные поля</p>
