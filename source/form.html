@@ -51,11 +51,11 @@
             </label>
             <label class="profile__field">
               <span class="profile__name">Вес (кг):*</span>
-              <input class="profile__data" type="text" placeholder="7" name="weight" required>
+              <input class="profile__data" type="number" placeholder="7" name="weight" required>
             </label>
             <label class="profile__field">
               <span class="profile__name">Возраст (лет):</span>
-              <input class="profile__data" type="text" placeholder="7" name="age">
+              <input class="profile__data" type="number" placeholder="7" name="age">
             </label>
           </fieldset>
           <fieldset class="profile__set profile__set--program">
@@ -148,12 +148,14 @@
           </li>
         </ul>
         <p class="footer__copyright copyright">
-          <a class="copyright__link-txt" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__link-img" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy">
+          <!-- <div class="copyright__wraper"> -->
+          <a class="copyright__link copyright__link-txt" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link copyright__link-img" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy">
           <svg class="copyright__img" width="27" height="34" role="img">
             <use xlink:href="#htmlacademy"></use>
           </svg>
           </a>
+        <!-- </div> -->
         </p>
       </div>
     </footer>

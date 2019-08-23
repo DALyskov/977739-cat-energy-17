@@ -74,9 +74,25 @@
   padding: 12px 15px 13px;
 
   text-transform: uppercase;
-  color: $txt-color-arial;
 
-  border: 1px solid #e6e6e6;
+  border: 1px solid rgba($border-color, 0.5);
+
+  &::placeholder {
+    color: $txt-color-arial;
+  }
+
+  &:hover {
+    border: 1px solid rgba($border-color, 1);
+  }
+
+  &:focus {
+    outline: 2px solid $txt-color-arial;
+  }
+
+  &:not(:placeholder-shown):invalid {
+      outline: 2px solid #ff8282;
+      border: 0 none;
+  }
 }
 
 .profile__set--contacts .profile__data {
@@ -89,6 +105,14 @@
   right: 13px;
 }
 
+.profile__data:focus+ .profile__svg {
+  fill: $button-color;
+}
+
+.profile__data:not(:placeholder-shown):invalid+ .profile__svg {
+  fill: #ff8282;
+}
+
 .profile__radio, .profile__checkbox {
   display: none;
 }
@@ -98,6 +122,8 @@
   display: block;
   padding: 12px 0 13px;
   padding-left: 45px;
+
+  cursor: pointer;
 
 
   &::before {
@@ -111,7 +137,6 @@
     margin-top: -15px;
 
     border: 1px solid $border-color;
-
   }
 
   &--radio::before {
@@ -159,6 +184,15 @@
 
     border-left: 2px solid $button-color;
     border-bottom: 2px solid $button-color;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: $opacity-txt-down;
   }
 }
 
@@ -215,9 +249,20 @@
   overflow: auto;
 
   text-transform: uppercase;
-  color: $txt-color-arial;
 
-  border: 1px solid $border-color;
+  border: 1px solid rgba($border-color, 0.5);
+
+  &::placeholder {
+    color: $txt-color-arial;
+  }
+
+  &:hover {
+    border: 1px solid rgba($border-color, 1);
+  }
+
+  &:focus {
+    outline: 2px solid $txt-color-arial;
+  }
 }
 
 .profile__btn {
