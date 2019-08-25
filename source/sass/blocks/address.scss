@@ -1,10 +1,4 @@
 .address {
-  // display: flex;
-  // justify-content: space-between;
-  // flex-wrap: wrap;
-  // align-items: center;
-
-  // padding-top: 25px;
   padding-top: 28px;
 
   &--notindex {
@@ -26,7 +20,6 @@
   width: 140px;
   margin: 0;
   margin-left: 20px;
-  // padding: 0;
 
   font-size: 16px;
   line-height: 20px;
@@ -39,7 +32,6 @@
   width: 140px;
   margin: 0;
   margin-right: 20px;
-  // padding: 0;
 
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -49,19 +41,33 @@
 }
 
 .address__map {
+  position: relative;
   width: 100%;
   height: 365px;
   margin-top: 27px;
 
   & iframe {
-    background: $block-backgr-color url("../img/bg-map-mobile@1x.png") no-repeat;
+    background: center $block-backgr-color url("../img/bg-map-mobile@1x.png") no-repeat;
     background-size: 100% auto;
+
+    // &::before {
+    //   position: absolute;
+    //   content: "";
+    //   width: 55px;
+    //   height: 53px;
+    //   top: calc(50% - 20px);
+    //   left: calc(50% - 55px / 2);
+    //   background: center url("../img/map-pin.png") no-repeat;
+    //   background-size: 100% auto;
+
+    //   z-index: 10;
+    // }
   }
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .address__map iframe {
-    background: $block-backgr-color url("../img/bg-map-mobile@2x.png") no-repeat;
+    background: center $block-backgr-color url("../img/bg-map-mobile@2x.png") no-repeat;
     background-size: 100% auto;
   }
 }
@@ -99,14 +105,14 @@
     margin-top: 59px;
 
     & iframe {
-      background: $block-backgr-color url("../img/bg-map-tablet@1x.png") no-repeat;
+      background: center $block-backgr-color url("../img/bg-map-tablet@1x.png") no-repeat;
       background-size: 100% auto;
     }
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .address__map iframe {
-      background: $block-backgr-color url("../img/bg-map-tablet@2x.png") no-repeat;
+      background: center $block-backgr-color url("../img/bg-map-tablet@2x.png") no-repeat;
       background-size: 100% auto;
     }
   }
@@ -123,38 +129,24 @@
     position: absolute;
     justify-content: space-between;
 
-    top: 97px;
-    // left: 110px;
-    // left: 7.6%;
+    top: 95px;
     left: calc((100% - 1220px) / 2);
     box-sizing: border-box;
     width: 570px;
-
     padding: 63px 0;
 
-    // display: flex;
-    // justify-content: space-between;
-    // flex-wrap: wrap;
-    // align-items: center;
-    // background-color: red;
     background-color: $txt-color-alt;
+
+    z-index: 10;
   }
 
   .address__title {
-    // margin: 65px 0;
-    // width: 160px;
     margin-left: 75px;
-
-    // font-size: 20px;
-    // line-height: 25px;
   }
 
   .address__description {
-    // width: 160px;
     margin-right: 83px;
 
-    // font-size: 16px;
-    // line-height: 20px;
     text-align: start;
   }
 
@@ -162,14 +154,14 @@
     margin-top: 0;
 
     & iframe {
-      background: $block-backgr-color url("../img/bg-map-desktop@1x.png") no-repeat;
+      background: center $block-backgr-color url("../img/bg-map-desktop@1x.png") no-repeat;
       background-size: 100% auto;
     }
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .address__map iframe {
-      background: $block-backgr-color url("../img/bg-map-desktop@2x.png") no-repeat;
+      background: center $block-backgr-color url("../img/bg-map-desktop@2x.png") no-repeat;
       background-size: 100% auto;
     }
   }

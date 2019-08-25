@@ -120,19 +120,36 @@
             </li>
             <li class="example__item">
               <b class="example__data">60 дней</b>
-              <p class="example__definition">затрачено времени</p>
+              <p class="example__definition example__definition--days">затрачено времени</p>
             </li>
           </ul>
-          <p class="example__cost">Затраты на питание: 15 000 руб.</p>
+          <p class="example__cost"><span>Затраты на питание:</span> 15 000 руб.</p>
         </div>
         <div class="example__visually">
-          <img class="example__img example__img--before" src="img/before-mobile@1x.png" width="300" height="230" alt="Кот в начале диеты">
-          <img class="example__img example__img--after" src="img/after-mobile@1x.png" width="300" height="230" alt="Кот в конце диеты">
-          <!-- width="300" -->
-          <!-- style="width: 50%" -->
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@2x.webp 2x, img/before-desktop@1x.webp 1x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@2x.webp 2x, img/before-tablet@1x.webp 1x">
+            <source type="image/webp" srcset="img/before-mobile@2x.webp 2x, img/before-mobile@1x.webp 1x">
+            <source media="(min-width: 1300px)" srcset="img/before-desktop@2x.png 2x, img/before-desktop@1x.png 1x">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@2x.jpg 2x, img/before-tablet@1x.jpg 1x">
+            <img class="example__img example__img--before" src="img/before-mobile@1x.png" width="300" height="230" alt="Кот в начале диеты">
+          </picture>
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@2x.webp 2x, img/after-desktop@1x.webp 1x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@2x.webp 2x, img/after-tablet@1x.webp 1x">
+            <source type="image/webp" srcset="img/after-mobile@2x.webp 2x, img/after-mobile@1x.webp 1x">
+            <source media="(min-width: 1300px)" srcset="img/after-desktop@2x.png 2x, img/after-desktop@1x.png 1x">
+            <source media="(min-width: 768px)" srcset="img/after-tablet@2x.jpg 2x, img/after-tablet@1x.jpg 1x">
+            <img class="example__img example__img--after" src="img/after-mobile@1x.png" width="300" height="230" alt="Кот в конце диеты">
+            <!-- width="300" -->
+            <!-- style="width: 50%" -->
+          </picture>
+
           <div class="example__range">
             <button class="example__btn">Было</button>
-            <input class="example__progress" type="range" min="0" max="100" value="50">
+            <input class="example__progress" type="range" min="0" max="100" value="50" onchange="progress_ie()">
+            <!-- oninput="console.log(this.value)" -->
+            <!-- onchange="console.log(this.value)" -->
             <!-- <div class="example__progress">
               <div class="example__togggle"></div>
             </div> -->

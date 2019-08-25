@@ -114,7 +114,7 @@
     left: 0;
     right: 0;
 
-    background-color: #222222;
+    background-color: rgba(#222222, 0.2);
   }
 
   &::after {
@@ -164,7 +164,7 @@
     width: 50%;
 
     background: white;
-    box-shadow: inset 0 0 0 1px $block-backgr-color;
+    box-shadow: inset 0 0 0 1px rgba($border-color, 0.5);
     border-left: 30px solid white;
     border-right: 30px solid white;
   }

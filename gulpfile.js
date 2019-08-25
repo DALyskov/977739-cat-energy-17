@@ -52,7 +52,7 @@ gulp.task("html", function () {
 
 gulp.task("js", function () {
   return gulp.src("source/js/*.js")
-  .pipe(uglify())
+  // .pipe(uglify())
     .pipe(gulp.dest("build/js"));
 });
 
