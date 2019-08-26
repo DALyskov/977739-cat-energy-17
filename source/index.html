@@ -106,8 +106,8 @@
         </ul>
       </section>
       <section class="example">
-        <div class="example__initial-data">
           <h2 class="example__title">Живой пример</h2>
+        <div class="example__initial-data">
           <p class="example__description">Борис сбросил 5 кг за 2 месяца,
             просто заменив свой обычный корм на Cat Energy Slim.
             Отличный результат без изнуряющих тренировок!
@@ -141,19 +141,11 @@
             <source media="(min-width: 1300px)" srcset="img/after-desktop@2x.png 2x, img/after-desktop@1x.png 1x">
             <source media="(min-width: 768px)" srcset="img/after-tablet@2x.png 2x, img/after-tablet@1x.png 1x">
             <img class="example__img example__img--after" src="img/after-mobile@1x.png" width="300" height="230" alt="Кот в конце диеты">
-            <!-- width="300" -->
-            <!-- style="width: 50%" -->
           </picture>
-
           <div class="example__range">
-            <button class="example__btn">Было</button>
+            <button class="example__btn example__btn--before">Было</button>
             <input class="example__progress" type="range" min="0" max="100" value="50" onchange="progress_ie()">
-            <!-- oninput="console.log(this.value)" -->
-            <!-- onchange="console.log(this.value)" -->
-            <!-- <div class="example__progress">
-              <div class="example__togggle"></div>
-            </div> -->
-            <button class="example__btn">Стало</button>
+            <button class="example__btn example__btn--after">Стало</button>
           </div>
         </div>
       </section>
