@@ -90,8 +90,8 @@
   }
 
   &:not(:placeholder-shown):invalid {
-      outline: 2px solid #ff8282;
-      border: 0 none;
+    outline: 2px solid #ff8282;
+    border: 0 none;
   }
 }
 
@@ -105,15 +105,16 @@
   right: 13px;
 }
 
-.profile__data:focus+ .profile__svg {
+.profile__data:focus + .profile__svg {
   fill: $button-color;
 }
 
-.profile__data:not(:placeholder-shown):invalid+ .profile__svg {
+.profile__data:not(:placeholder-shown):invalid + .profile__svg {
   fill: #ff8282;
 }
 
-.profile__radio, .profile__checkbox {
+.profile__radio,
+.profile__checkbox {
   display: none;
 }
 
@@ -491,7 +492,6 @@
   }
 
   .profile__type {
-
     &--checkbox {
       flex-basis: auto;
       flex-grow: 0;
@@ -499,7 +499,7 @@
     }
 
     &--checkbox:nth-of-type(odd) {
-      margin-right:0;
+      margin-right: 0;
     }
   }
 
