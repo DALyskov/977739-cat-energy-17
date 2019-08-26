@@ -6,32 +6,42 @@ var img_after = document.querySelector(".example__img--after");
 var docWidth = document.body.clientWidth;
 var tabletWidth = 768;
 
-// progress.addEventListener("input", function () {
-//   img_before.style.clip = "rect(auto, " + ((100 - progress.value) * 3) + "px , auto, auto)";
-//   img_after.style.clip = "rect(auto, auto, auto, " + ((100 - progress.value) * 3) + "px)";
-//   console.log(docWidth);
-// //   // img_before.style.width = (100 - progress.value) + "%";
-// //   console.log(progress.value);
-// //   // console.log(img_before.style.clip);
-// //   // console.log(img_after.style.clip);
-// });
+progress.addEventListener("input", function () {
+  img_before.style.clip = "rect(auto, " + ((100 - progress.value) * 3) + "px , auto, auto)";
+  img_after.style.clip = "rect(auto, auto, auto, " + ((100 - progress.value) * 3) + "px)";
+  // console.log(docWidth);
+// // //   // img_before.style.width = (100 - progress.value) + "%";
+// // //   console.log(progress.value);
+// // //   // console.log(img_before.style.clip);
+// // //   // console.log(img_after.style.clip);
+});
 
+function progress_ie() {
+  var progress_ie11 = document.querySelector(".example__progress").value;
+  img_before.style.clip = "rect(auto, " + ((100 - progress_ie11) * 3) + "px , auto, auto)";
+  img_after.style.clip = "rect(auto, auto, auto, " + ((100 - progress_ie11) * 3) + "px)";
+}
 
 if (docWidth >= tabletWidth) {
   progress.addEventListener("input", function () {
-    img_before.style.clip = "rect(auto, " + ((100 - progress.value) * 6.9) + "px , auto, auto)";
-    img_after.style.clip = "rect(auto, auto, auto, " + ((100 - progress.value) * 6.9) + "px)";
+    // img_before.style.clip = "rect(auto, " + ((100 - progress.value) * 6.9) + "px , auto, auto)";
+    // img_after.style.clip = "rect(auto, auto, auto, " + ((100 - progress.value) * 6.9) + "px)";
+    img_before.style.clip = "rect(auto, " + (((100 - progress.value) * 6.9) - 7) + "px , auto, auto)"; /*для сдвинутой фотографии*/
+    img_after.style.clip = "rect(auto, auto, auto, " + (((100 - progress.value) * 6.9) - 7) + "px)"; /*для сдвинутой фотографии*/
     console.log(progress.value);
     console.log(img_before.style.clip);
     console.log(img_after.style.clip);
   });
+  function progress_ie() {
+    var progress_ie11 = document.querySelector(".example__progress").value;
+    img_before.style.clip = "rect(auto, " + (((100 - progress_ie11) * 6.9) - 7) + "px , auto, auto)";
+    img_after.style.clip = "rect(auto, auto, auto, " + (((100 - progress_ie11) * 6.9) - 7) + "px)";
+    // img_before.style.clip = "rect(auto, " + ((100 - progress_ie11) * 6.9) + "px , auto, auto)";
+    // img_after.style.clip = "rect(auto, auto, auto, " + ((100 - progress_ie11) * 6.9) + "px)";
+  }
 };
 
-// function progress_ie() {
-//   var progress_ie11 = document.querySelector(".example__progress").value;
-//   img_before.style.clip = "rect(auto, " + ((100 - progress_ie11) * 3) + "px , auto, auto)";
-//   img_after.style.clip = "rect(auto, auto, auto, " + ((100 - progress_ie11) * 3) + "px)";
-// }
+
 
 // progress.addEventListener("input", function () {
 //   img_before.style.width = (100 - progress.value) + "%";

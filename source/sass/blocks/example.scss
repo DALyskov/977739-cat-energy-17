@@ -192,7 +192,7 @@
   // }
 
   &::-webkit-slider-thumb {
-    position: relative;
+    // position: relative;
     -webkit-appearance: none;
     box-sizing: border-box;
 
@@ -242,7 +242,6 @@
   &::-ms-thumb {
     height: 0;
     width: 0;
-    // cursor: pointer;
   }
 }
 
@@ -379,7 +378,7 @@
   .example__visually {
     margin-top: 242px;
     padding-top: 367px;
-    // padding-bottom: 35px;
+    padding-bottom: 75px;
 
     // position: relative;
     width: 100%;
@@ -402,14 +401,15 @@
     height: auto;
     top: -169px;
     left: calc(50% - 338px);
+    // left: calc(50% - 345px);
 
     &--before {
-      clip: rect(auto, 345px, auto, auto);
+      clip: rect(auto, 338px, auto, auto);
       // z-index: 20;
     }
 
     &--after {
-      clip: rect(auto, auto, auto, 345px);
+      clip: rect(auto, auto, auto, 338px);
       // z-index: 10;
     }
   }
@@ -431,25 +431,36 @@
     // outline: none;
     // background: transparent;
 
-    // overflow: hidden;
+    overflow: visible;
 
     width: 428px;
-    // height: 12px;
-    // margin: 0 18px;
-    // padding: 0 3px;
+    height: 6px;
+    // box-sizing: border-box;
+    // height: 50px;
+    // border: 10px solid transparent;
 
-    // background: white;
-    // border: 1px solid #cdcdcd;
+
+    background: #dcdcdc;
+    border: none;
+
     // border-radius: 6px;
 
     // cursor: pointer;
 
+    &:active,
+    &:focus {
+      &::-webkit-slider-thumb {
+        box-shadow: 0 0 0 2px $button-color, 0 2px 5px 2px rgba(#000000, 0.3);
+      }
+    }
+
     &::before {
+      display: none;
       // position: absolute;
       // content: "";
 
       // width: 86px;
-      // height: 6px;
+
       // margin-left: -4px;
 
       // border: 3px solid white;
@@ -472,19 +483,123 @@
     //   cursor: pointer;
     // }
 
+    &::-webkit-slider-runnable-track {
+      height: 6px;
+    }
+
     &::-webkit-slider-thumb {
       // position: relative;
       // -webkit-appearance: none;
       // box-sizing: border-box;
 
-      // width: 6px;
-      // height: 6px;
+      width: 32px;
+      height: 32px;
+      margin-top: -13px;
 
-
+      background-color: $button-color;
+      border: 12px solid white;
+      border-radius: 16px;
+      // outline: 1px solid #cdcdcd;
+      // -moz-outline-radius: 16px;
+      box-shadow: 0 0 0 1px #cdcdcd, 0 2px 5px 2px rgba(#000000, 0.15);
 
       // background-color: $button-color;
       // border-radius: 16px;
       // box-shadow: -103px 0 0 100px $button-color;
+      // box-shadow: none;
+
+      &:hover {
+        box-shadow: 0 0 0 1px #cdcdcd, 0 2px 5px 2px rgba(#000000, 0.3);
+      }
+
+      &:active {
+        box-shadow: 0 0 0 2px $button-color, 0 2px 5px 2px rgba(#000000, 0.3);
+      }
+    }
+
+    &::-moz-range-progress {
+      height: 6px;
+
+      background-color: #dcdcdc;
+      // border-radius: 3px;
+    }
+
+    &::-moz-range-thumb {
+      // box-sizing: border-box;
+      // width: 10px;
+      // height: 10px;
+      width: 32px;
+      height: 32px;
+
+      background-color: $button-color;
+      border: 12px solid white;
+      border-radius: 16px;
+      box-shadow: 0 0 0 1px #cdcdcd, 0 2px 5px 2px rgba(#000000, 0.15);
+
+      // background: transparent;
+      // border: transparent;
+
+      // cursor: pointer;
+
+      &:hover {
+        box-shadow: 0 0 0 1px #cdcdcd, 0 2px 5px 2px rgba(#000000, 0.3);
+      }
+
+      &:active {
+        box-shadow: 0 0 0 2px $button-color, 0 2px 5px 2px rgba(#000000, 0.3);
+      }
+    }
+
+    &::-ms-track {
+      width: 100%;
+      height: 50px;
+      // color: red;
+      background: #dcdcdc;
+      // color: transparent;
+      // border-radius: 6px;
+      // background: transparent;
+      // border: 39px solid red;
+      // border-color: transparent;
+      // border-width: 39px 0;
+
+    }
+
+    &::-ms-fill-lower {
+      // margin: 2px 0;
+      background: transparent;
+      // border-radius: 50px;
+    }
+
+    &::-ms-fill-upper {
+      // background: transparent;
+    }
+
+    &::-ms-thumb {
+      box-sizing: border-box;
+      // height: 0;
+      // width: 0;
+      width: 32px;
+      height: 32px;
+
+      background-color: $button-color;
+      border: 12px solid white;
+      border-radius: 16px;
+      box-shadow: 0 0 0 1px #cdcdcd, 0 2px 5px 2px rgba(#000000, 0.15);
+
+      // background: transparent;
+      // border: transparent;
+
+      // cursor: pointer;
+      // position: absolute;
+      // z-index: 10;
+
+      &:hover {
+        box-shadow: 0 0 0 1px #cdcdcd, 0 2px 5px 2px rgba(#000000, 0.3);
+      }
+
+      &:active {
+        box-shadow: 0 0 0 2px $button-color, 0 2px 5px 2px rgba(#000000, 0.3);
+      }
     }
   }
 
